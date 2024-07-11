@@ -50,6 +50,7 @@ const BottomTabNavigator = ({
   screenOptions,
   tabBarOptions,
   appearance,
+  lazy = true,
   ...rest
 }: IBottomTabNavigatorProps) => {
   
@@ -81,9 +82,5 @@ const BottomTabNavigator = ({
     />
   );
 }
-
-BottomTabNavigator.defaultProps = {
-  lazy: true,
-};
 
 export default createNavigatorFactory(BottomTabNavigator);
